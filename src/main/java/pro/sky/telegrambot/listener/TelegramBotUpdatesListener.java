@@ -65,7 +65,7 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
                     notificationTaskService.saveMessage(chatId, matcher.group(3), dateTime);
                     telegramBotService.sendMessage(chatId, "напоминание установленно");
                 } else {
-                    telegramBotService.sendMessage(chatId, "Формат сообщения не верный");
+                    telegramBotService.sendMessage(chatId, "Формат сообщения неверный!");
                 }
             }
         });
